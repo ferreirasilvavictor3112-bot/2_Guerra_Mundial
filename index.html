@@ -1,46 +1,227 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Blog de Notícias sobre Compostagem de Resíduos Alimentares - Dicas, benefícios e como transformar restos em vida">
+    <title>EcoBlog | Compostagem e Sustentabilidade</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <title>2 Guerra Mundial</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
-<body>
-
-    <header>2 Guerra Mundial</header>
-    <section class="chamada">
-        <div class="chamada de texto">
-
-            <h1>2 Guerra Mundial</h1>
-            <p>#História</p>
+<body class="light-mode">
+    <!-- Header Principal -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <i class="fas fa-leaf logo-icon"></i>
+                <h1 class="logo-text">Eco<span class="logo-highlight">Blog</span></h1>
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Início</a></li>
+                    <li><a href="#" class="nav-link">Artigos</a></li>
+                    <li><a href="#" class="nav-link">Sustentabilidade</a></li>
+                    <li><a href="#" class="nav-link">Dicas</a></li>
+                    <li><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="darkModeToggle" class="dark-mode-btn" aria-label="Alternar modo escuro">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
-        <div>
+    </header>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZffDTZTmLGI?si=WUIIyujqxIu2tB_K"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">🌱 Transforme Restos em Vida</span>
+                <h1 class="hero-title">Compostagem de <br>Resíduos Alimentares</h1>
+                <p class="hero-description">Um processo natural que transforma restos de comida e outros materiais orgânicos em adubo rico em nutrientes, reduzindo o lixo e cuidando do planeta.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Começar Agora <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-outline">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600&h=500&fit=crop" alt="Compostagem caseira">
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">-60%</span>
+                        <span class="stat-label">Menos lixo em aterros</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="categoria">
-        <h2>Outras sugestões de vídeos</h2>
-        <div class="categoria-vídeos">
-            <a href="https://www.youtube.com/watch?v=uUY0SK5f0XE">
-                <img src="https://img.youtube.com/vi/uUY0SK5f0XE/maxresdefault.jpg"/>
-            </a>
-            <a href="https://www.youtube.com/watch?v=BYDoEStkCiA">
-                <img src="https://img.youtube.com/vi/BYDoEStkCiA/maxresdefault.jpg"/>
-            </a>
-            <a href="https://www.youtube.com/watch?v=YNClo9sa6kc">
-                <img src="https://img.youtube.com/vi/YNClo9sa6kc/maxresdefault.jpg"/>
-            </a>
+
+    <!-- Benefícios Rápidos -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Benefícios da Compostagem</h2>
+                <p class="section-subtitle">Prática que gera impacto positivo em várias frentes</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-trash-alt"></i></div>
+                    <h3>Redução de Lixo</h3>
+                    <p>Diminui a quantidade de resíduos enviados aos aterros sanitários</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-cloud-moon-rain"></i></div>
+                    <h3>Menos Poluição</h3>
+                    <p>Reduz a emissão de gases como o metano, que contribuem para o efeito estufa</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Solo Mais Fértil</h3>
+                    <p>Produz adubo natural que melhora a qualidade e retenção de água do solo</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Economia</h3>
+                    <p>Reduz a necessidade de fertilizantes químicos</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-recycle"></i></div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Promove práticas conscientes e faz parte da Economia Circular</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Saúde das Plantas</h3>
+                    <p>Fornece nutrientes essenciais para o crescimento saudável</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Feed de Notícias -->
+    <section class="feed-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Últimas Notícias</h2>
+                <p class="section-subtitle">Tudo sobre compostagem, sustentabilidade e práticas ecológicas</p>
+            </div>
+            <div class="news-grid" id="newsGrid">
+                <!-- Os cards serão renderizados dinamicamente via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipos de Compostagem -->
+    <section class="types-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tipos de Compostagem</h2>
+                <p class="section-subtitle">Escolha a melhor opção para sua realidade</p>
+            </div>
+            <div class="types-grid">
+                <div class="type-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Doméstica</h3>
+                    <p>Feita em casas ou apartamentos com restos de alimentos e materiais orgânicos.</p>
+                </div>
+                <div class="type-card">
+                    <i class="fas fa-worm"></i>
+                    <h3>Vermicompostagem</h3>
+                    <p>Utiliza minhocas para acelerar a decomposição dos resíduos.</p>
+                </div>
+                <div class="type-card">
+                    <i class="fas fa-industry"></i>
+                    <h3>Industrial</h3>
+                    <p>Realizada em grande escala por empresas ou prefeituras.</p>
+                </div>
+                <div class="type-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Em Leiras</h3>
+                    <p>Resíduos organizados em montes alongados e revolvidos regularmente.</p>
+                </div>
+                <div class="type-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Compostagem Seca</h3>
+                    <p>Usa maior quantidade de materiais secos, como folhas e serragem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slogans -->
+    <section class="slogans-section">
+        <div class="container">
+            <div class="slogans-slider">
+                <div class="slogan-item">🌿 "Orgânico não é lixo!"</div>
+                <div class="slogan-item">🍃 "Transforme restos em vida."</div>
+                <div class="slogan-item">♻️ "Compostar é cuidar do planeta."</div>
+                <div class="slogan-item">🌱 "Da comida ao adubo."</div>
+                <div class="slogan-item">💚 "Menos lixo, mais natureza."</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>EcoBlog</span>
+                    </div>
+                    <p>Transformando conhecimento sobre compostagem em ações sustentáveis para um planeta mais verde.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Artigos</a></li>
+                        <li><a href="#">Dicas de Compostagem</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Guias PDF</a></li>
+                        <li><a href="#">Calculadora de Resíduos</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Receba dicas sustentáveis no seu e-mail</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Seu melhor e-mail">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoBlog - Compostagem e Sustentabilidade. Todos os direitos reservados.</p>
+                <p>Fontes: Ministério do Meio Ambiente, EMBRAPA, CEMPRE, FAO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
